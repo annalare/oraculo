@@ -2,7 +2,7 @@ const h2 = document.querySelector("h2");
 console.log(h2);
 const button = document.querySelector("a");
 const pedidos = () => {
-  const aleatorio = Math.round(Math.random() * 20);
+  const aleatorio = Math.round(Math.random() * 19);
   const mensagens = [
     "A vida trará coisas boas se tiver paciência.",
     "A maior de todas as torres começa no solo",

@@ -6,25 +6,42 @@
 }
 
 :root {
-  --first-color: rgba(176, 53, 233, 0.87);
+  --first-color: rgba(235, 223, 55, 0.87);
   --body-color: rgb(196, 131, 192);
 
-  --normal-font-size: 1.35rem;
+  --normal-font-size: 1.45rem;
+}
+h1 {
+  color: #e2d624;
+  letter-spacing: 3px;
+  font-size: 70px;
 }
 
 body {
   height: 100vh;
   display: grid;
   place-items: center;
-  background-color: var(--body-color);
+  background-image: linear-gradient(
+    to right,
+    #9056df,
+    #a550e9,
+    #bc45f0,
+    #d434f6,
+    #ed0af9
+  );
   font-size: var(--normal-font-size);
 }
 a {
   text-decoration: none;
+  letter-spacing: 1.5px;
 }
 h2 {
-  font-size: 25px;
-  color: rgb(48, 35, 165);
+  font-size: 28px;
+  color: rgb(243, 242, 250);
+  font-weight: 500;
+  width: 300px;
+  text-align: center;
+  letter-spacing: 2px;
 }
 .button {
   position: relative;
@@ -41,8 +58,8 @@ h2 {
   height: 40%;
   background: linear-gradient(
     80deg,
-    rgba(176, 53, 233, 0.87),
-    rgb(196, 131, 192)
+    rgba(206, 233, 53, 0.87),
+    rgb(231, 154, 208)
   );
   position: absolute;
   left: 0;
@@ -88,7 +105,7 @@ h2 {
   opacity: 1;
 }
 .button:hover {
-  transform: scale(1.3);
+  transform: scale(1.2);
 }
 .button:hover img {
   opacity: 1;
@@ -111,7 +128,10 @@ h2 {
     width: 25%;
   }
   a {
-    font-size: 1.15rem;
-    padding: 0.4rem 1.5rem;
+    font-size: 1rem;
+    padding: 0.4rem 1rem;
+  }
+  h2 {
+    font-size: 20px;
   }
 }
