@@ -9,7 +9,7 @@
   --first-color: rgba(176, 53, 233, 0.87);
   --body-color: rgb(196, 131, 192);
 
-  --normal-font-size: 1.85rem;
+  --normal-font-size: 1.35rem;
 }
 
 body {
@@ -22,11 +22,15 @@ body {
 a {
   text-decoration: none;
 }
+h2 {
+  font-size: 25px;
+  color: rgb(48, 35, 165);
+}
 .button {
   position: relative;
   background-color: var(--first-color);
   color: rgb(255, 255, 255);
-  padding: 0.9rem 2.4rem;
+  padding: 0.9rem 2.2rem;
   border-radius: 3rem;
   transition: 4s;
 }
@@ -100,4 +104,14 @@ a {
 }
 .button:hover .button-cristal {
   transform: translate(-5px, 65px) rotate(10deg) scale(1.2);
+}
+
+@media only screen and (max-width: 440px) {
+  a img {
+    width: 25%;
+  }
+  a {
+    font-size: 1.15rem;
+    padding: 0.4rem 1.5rem;
+  }
 }
